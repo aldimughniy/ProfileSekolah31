@@ -96,7 +96,7 @@
             android:gravity="center_horizontal"
             android:textSize="30dp"
             android:textStyle="bold"
-            android:text="hijau"
+            android:text="biru"
             android:textColor="@color/black" />
 
         <TextView
