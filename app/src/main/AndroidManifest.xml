@@ -2,16 +2,54 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.profilesekolah">
 
+    <permission android:name="android.permission.internet" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logo_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProfileSekolah">
         <activity
+            android:name=".Buku9Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Buku8Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Buku7Activity"
+            android:exported="false" />
+        <activity
+            android:name=".albumpramukaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".albumpramukaActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".albumpmrActivity"
+            android:exported="false" />
+        <activity
+            android:name=".albumhutriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ekskullActivity"
+            android:exported="false" />
+        <activity
+            android:name=".futsalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pmrActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pramukaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".osisActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".profilActivity"
             android:exported="false" />
@@ -28,15 +66,11 @@
             android:name=".fasilitasActivity"
             android:exported="false" />
         <activity
-            android:name=".eskulActivity"
-            android:exported="false" />
-        <activity
             android:name=".BebasActivity"
             android:exported="false" />
-
-            <activity
-                android:name=".SplashScreenActivity"
-                android:exported="true" >
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

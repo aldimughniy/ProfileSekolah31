@@ -1,16 +1,18 @@
 package com.example.profilesekolah;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.profilesekolah.R;
+import com.example.profilesekolah.SliderAdapter;
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
 
-public class perpusActivity extends AppCompatActivity {
+public class ekskullActivity extends AppCompatActivity {
     SliderView sliderView;
     int[] images = {R.drawable.ekskul1,
             R.drawable.ekskul2,
@@ -21,7 +23,8 @@ public class perpusActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_perpus);
+        setContentView(R.layout.activity_ekskull);
+
         sliderView = findViewById(R.id.image_slider);
 
         SliderAdapter sliderAdapter = new SliderAdapter(images);
@@ -32,18 +35,23 @@ public class perpusActivity extends AppCompatActivity {
         sliderView.startAutoCycle();
     }
 
-    public void buku7(View view) {
-        Intent intent = new Intent(perpusActivity.this, Buku7Activity.class);
+    public void pramuka(View view) {
+        Intent intent = new Intent(ekskullActivity.this, pramukaActivity.class);
         startActivity(intent);
     }
 
-    public void buku8(View view) {
-        Intent intent = new Intent(perpusActivity.this, Buku8Activity.class);
+    public void pmr(View view) {
+        Intent intent = new Intent(ekskullActivity.this, pmrActivity.class);
         startActivity(intent);
     }
 
-    public void buku9(View view) {
-        Intent intent = new Intent(perpusActivity.this,Buku9Activity.class);
+    public void futsal(View view) {
+        Intent intent = new Intent(ekskullActivity.this, futsalActivity.class);
+        startActivity(intent);
+    }
+
+    public void osis(View view) {
+        Intent intent = new Intent(ekskullActivity.this, osisActivity.class);
         startActivity(intent);
     }
 }
